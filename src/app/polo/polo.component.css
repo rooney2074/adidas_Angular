@@ -1,0 +1,29 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+.under-line{
+    border-bottom: 3px solid white;
+}
+.under-line:hover{
+    border-bottom: 3px solid blue;
+    
+}
+.icon:hover{
+    fill: blue;
+}
+.product{
+    transition: 0.5s;
+}
+.product:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.logo{
+    opacity: 70%;
+}
+.logo:hover{
+    opacity: 100%;
+}

@@ -1,0 +1,16 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+.under-line{
+    border-bottom: 3px solid white;
+}
+.under-line:hover{
+    border-bottom: 3px solid blue;
+    
+}
+.icon:hover{
+    fill: blue;
+}

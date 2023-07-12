@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+ <!-- empty Wish list -->
+ <div class="container p-5" style="margin-top: 130px;" *ngIf="allproducts.length==0">
+    <div class="row text-center">
+        <div class="col">
+            <img src="https://media.tenor.com/QkBOcqjpksIAAAAM/patrick-star-to-do-list.gif" alt="" width="200px">
+            <h3 class="mt-3">Your Wish List Is Empty</h3>
+            <button class="btn btn-dark mt-2" routerLink="/">Add</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 80px;" *ngIf="allproducts.length!==0">
+
+    <div class="container">
+        <div class="row mx-auto md-2 w-100">
+            <div class="col-md-6 py-5 px-lg-4 px-1">
+                <div class="container px-4 px-lg-5" *ngFor="let item of allproducts">
+                    <!-- Heading Row-->
+                    <div class="row gx-4 gx-lg-5 align-items-center my-5 mt-5">
+                        <div class="col-lg-4"><img src="{{item.image}}" alt="" width="190px"></div>
+                        <div class="col-lg-5">
+                            <h5 class="font-weight-light p-3">{{item.name}}</h5>
+                            <p class="p-3">Rating: {{item.price}}</p>
+                              <a class="btn btn-outline-danger mt-auto" (click)="deletewish(item)">Remove</a>&nbsp;
+                              <a class="btn btn-primary" (click)="view(item)">Buy Now</a>
+    
+                              
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+            <div class="col-md-6 py-5 px-lg-4 px-1" style="background-image: url('https://images.unsplash.com/photo-1621665422246-fde75fb7e7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'); background-size: cover; height: 800px; border-radius: 20px;">
+                <div class="p-3" style="background: rgba(0,0,0,0.3); border-radius: 20px; margin-top: 100px;">
+                    <h1 class="text-light mt-5">OUR <b>PROMISE</b></h1>
+              <h5 class="text-light mt-5">Inspire the dreamers like you to live to their fullest potential: to be the best one can be, ON AND OFF THE FIELD.</h5>
+              <h5 class="text-light mt-5">Bringing your "A" game shouldn't stop after you play the best game of your life. Bring that passion and hard work to every area of your life - always strive to be the best version of yourself, and good things will happen.</h5>
+              <button class="btn btn-dark mt-5">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+
+</div>
+
+<app-footer></app-footer>

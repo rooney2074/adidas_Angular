@@ -1,0 +1,13 @@
+.product{
+    transition: 0.5s;
+}
+.product:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.logo{
+    opacity: 70%;
+}
+.logo:hover{
+    opacity: 100%;
+}

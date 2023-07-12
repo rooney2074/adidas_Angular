@@ -1,0 +1,157 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
+    <div class="container-fluid">
+
+          <a class="navbar-brand" style="margin-left: 40px;" routerLink=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QmZH6wDZQrEzhEon1D6V4jSmoiU8HJSgTd4HvoQAavnRJiibT-8Wo8QnIWr57IVbEg&usqp=CAU" alt="" width="250px"></a>
+
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="under-line">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/messi"><b style="font-size: 20px;">MESSI SHOP</b></a>
+              </li>
+          </div>
+          <div class="under-line">
+              <li class="nav-item">
+                <a class="nav-link active"  routerLink="/sale" role="button" aria-expanded="false">
+                  <b style="font-size: 20px;">SALE</b>
+                </a>
+              </li>
+          </div>
+          <div class="under-line">
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="/download"><b style="font-size: 20px;">DOWNLOAD APP</b></a>
+              </li>
+          </div>
+        </ul>
+        <form class="d-flex" role="search">
+            <ul class="navbar-nav">
+                <li class="nav-item" routerLink="/wish" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                  <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+                </svg></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item" routerLink="/cart" type="button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path class="icon" d="M21 4H3a1 1 0 0 0-1 1v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1zm-9 9c-3.309 0-6-2.691-6-6h2c0 2.206 1.794 4 4 4s4-1.794 4-4h2c0 3.309-2.691 6-6 6z"></path></svg></li>{{count}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+    <div class="row mx-auto md-2 w-100">
+        <div class="col-md-8 py-5 px-lg-4 px-1">
+            <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5 mb-1">Kids Shirts</h2></div>
+            <div class="scrollmenu d-flex">
+                <div class="container w-50" *ngFor="let item of kid">
+                    <div>
+                        <img src="{{item.image4}}" class="image" alt="">
+                        <h6 class="text-dark mt-3">{{item.name}}</h6>
+                        <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                        <p>with 10% off</p>
+                        <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                        <button class="btn btn-dark mt-1" (click)="view(item)">Buy Now</button>
+                    </div>
+                </div>
+              </div>
+              <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5 mb-1">Underwears</h2></div>
+            <div class="scrollmenu d-flex">
+        <div class="container w-50" *ngFor="let item of underwear">
+            <div>
+                <img src="{{item.image4}}" class="image" alt="">
+                <h6 class="text-dark mt-3">{{item.name}}</h6>
+                <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                <p>with 10% off</p>
+                <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                <button class="btn btn-dark mt-1" (click)="view(item)">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5 mb-1">Polo's and Shirts</h2></div>
+      <div class="scrollmenu d-flex">
+        <div class="container w-50" *ngFor="let item of polo">
+            <div>
+                <img src="{{item.image2}}" class="image" alt="">
+                <h6 class="text-dark mt-3">{{item.name}}</h6>
+                <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                <p>with 10% off</p>
+                <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                <button class="btn btn-dark mt-1"(click)="view(item)">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5 mb-1">Outer Wear</h2></div>
+      <div class="scrollmenu d-flex">
+        <div class="container w-50" *ngFor="let item of outer">
+            <div>
+                <img src="{{item.image3}}" class="image" alt="">
+                <h6 class="text-dark mt-3">{{item.name}}</h6>
+                <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                <p>with 10% off</p>
+                <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                <button class="btn btn-dark mt-1" (click)="view(item)">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5">Joggers</h2></div>
+      <div class="scrollmenu d-flex">
+        <div class="container w-50" *ngFor="let item of jogger">
+            <div>
+                <img src="{{item.image4}}" class="image" alt="">
+                <h6 class="text-dark mt-3">{{item.name}}</h6>
+                <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                <p>with 10% off</p>
+                <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                <button class="btn btn-dark mt-1" (click)="view(item)">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5">Hoddies</h2></div>
+      <div class="scrollmenu d-flex">
+        <div class="container w-50" *ngFor="let item of hoddy">
+            <div>
+                <img src="{{item.image4}}" class="image" alt="">
+                <h6 class="text-dark mt-3">{{item.name}}</h6>
+                <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                <p>with 10% off</p>
+                <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                <button class="btn btn-dark mt-1" (click)="view(item)">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="w-100 rounded text-center" style="background: rgba(0,0,0,0.3);"><h2 class="text-light mt-5 mb-1">Graphic T-Shirts</h2></div>
+      <div class="scrollmenu d-flex">
+        <div class="container w-50" *ngFor="let item of gra">
+            <div>
+                <img src="{{item.image4}}" class="image" alt="">
+                <h6 class="text-dark mt-3">{{item.name}}</h6>
+                <h3><b class="text-primary">Price: </b>{{item.price}}</h3>
+                <p>with 10% off</p>
+                <button class="btn btn-primary" (click)="add(item)">Add to Cart</button><br>
+                <button class="btn btn-dark mt-1" (click)="view(item)">Buy Now</button>
+            </div>
+        </div>
+      </div>
+        </div>
+        <div class="col-md-4 py-5 px-lg-4 px-1">
+            <div class="p-3" style="background: rgba(0,0,0,0.3); border-radius: 20px; margin-top: 100px;">
+                <h1 class="text-light mt-5">OUR <b>PROMISE</b></h1>
+          <h5 class="text-light mt-5">Inspire the dreamers like you to live to their fullest potential: to be the best one can be, ON AND OFF THE FIELD.</h5>
+          <h5 class="text-light mt-5">Bringing your "A" game shouldn't stop after you play the best game of your life. Bring that passion and hard work to every area of your life - always strive to be the best version of yourself, and good things will happen.</h5>
+          <button class="btn btn-dark mt-5">Learn More</button>
+            </div>
+            <div class="p-3" style="background: rgba(0,0,0,0.3); border-radius: 20px; margin-top: 100px; background-image: url('https://wallpaperaccess.com/full/479783.jpg'); background-size: cover; height: 700px;">
+            </div>
+            <div class="p-3">
+                <h3>Adidas</h3>
+                <p>The company was started by Adolf Dassler in his mother's house; he was joined by his elder brother Rudolf in 1924 under the name Gebrüder Dassler Schuhfabrik ("Dassler Brothers Shoe Factory"). Dassler assisted in the development of spiked running shoes (spikes) for multiple athletic events. To enhance the quality of spiked athletic footwear, he transitioned from a previous model of heavy metal spikes to utilising canvas and rubber. Dassler persuaded U.S. sprinter Jesse Owens to use his handmade spikes at the 1936 Summer Olympics. In 1949, following a breakdown in the relationship between the brothers, Adolf created Adidas and Rudolf established Puma, which became Adidas's business rival.[1]</p>
+                <p>The three stripes are Adidas's identity mark, having been used on the company's clothing and shoe designs as a marketing aid. The branding, which Adidas bought in 1952 from Finnish sports company Karhu Sports for the equivalent of €1,600 and two bottles of whiskey,[8][9] became so successful that Dassler described Adidas as "The three stripes company".[8][9]</p>
+            </div>
+            <div class="p-3">
+                <iframe width="100%" height="700px" style="border-radius: 20px;" src="https://www.youtube.com/embed/G7ektFFQUQA" title="Celebratory Messi + Argentina adidas billboard in Dubai #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

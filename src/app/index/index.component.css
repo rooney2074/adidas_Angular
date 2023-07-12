@@ -1,0 +1,116 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+.under-line{
+    border-bottom: 3px solid white;
+}
+.under-line:hover{
+    border-bottom: 3px solid blue;
+    
+}
+.icon:hover{
+    fill: blue;
+}
+.back{
+    background-image: url('https://pbs.twimg.com/media/ERZaFQ9W4AAyzEo.jpg:large'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back:hover{
+    background-image: url('https://i.pinimg.com/originals/84/3b/70/843b702e718cd3b05a3ec85913158953.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.btn{
+    padding: 10px;
+    font-size: 20px;
+    font-family: HB,sans-serif;
+}
+.btn:hover{
+    padding: 10px;
+    font-size: 20px;
+    font-family: HB,sans-serif;
+}
+.back2{
+    background-image: url('https://assets.ajio.com/medias/sys_master/root/20220725/pusC/62de6839f997dd03e2f20091/-473Wx593H-463205585-navy-MODEL.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back2:hover{
+    background-image: url('https://cdn.shopify.com/s/files/1/0266/6276/4597/products/300923085BLUE_2_1024x1024.jpg?v=1669212041'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back3{
+    background-image: url('https://images.english.elpais.com/resizer/B0aUXpUkouN36gaqWpRN2D2BnPQ=/1200x0/filters:focal(385x67:395x77)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/5M2UPSIGGNAANGL6MUULSFJVXU.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back3:hover{
+    background-image: url('https://s.yimg.com/ny/api/res/1.2/6UdZefyVJKrnNovHA3MXHw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/26fzI36hGA.5RfrkC7p76Q--~B/aD0yNzA5O3c9NDA2MjthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/ap.org/9f12e159a6e7d8e21e90da4abd99dbb5'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back4{
+    background-image: url('https://assets.gqindia.com/photos/6347b8a19e8356769bb0649f/1:1/w_1080,h_1080,c_limit/top-image-01.jpeg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back4:hover{
+    background-image: url('https://balenciaga.dam.kering.com/m/5e6f06d9d98176f9/Medium-731821TNVT43775_K.jpg?v=2'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back5{
+    background-image: url('https://scontent.fcok3-1.fna.fbcdn.net/v/t1.6435-9/120509454_1231128470619225_2002317358550873958_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7ljTXtTSvvsAX9PWaAr&tn=_wKUb6qpHADZBTVi&_nc_ht=scontent.fcok3-1.fna&oh=00_AfC5kPp75ZNwXPTiopo_GhHgXHzlIWqd_yK8eyP9c2AwRg&oe=641028B4'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back5:hover{
+    background-image: url('https://assets.bonkerscorner.com/uploads/2022/08/13222320/20220813_125748910_iOS.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back6{
+    background-image: url('https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c9c5c3fbf60946f6b25daf5701050a5d_9366/Essentials_Big_Logo_Cotton_Tee_Blue_IC6857_21_model.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back6:hover{
+    background-image: url('https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ea40503a0104678b468af5701051297_9366/Essentials_Big_Logo_Cotton_Tee_Blue_IC6857_23_hover_model.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back7{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/797/70/370/leo-messi-wallpaper-preview.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back7:hover{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/449/353/223/lionel-messi-4k-wallpaper-preview.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back8{
+    background-image: url('https://highxtar.com/wp-content/uploads/2022/05/highxtar-adidas-lanza-dos-nuevas-colecciones-underwear-1-682x1024.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.back8:hover{
+    background-image: url('https://highxtar.com/wp-content/uploads/2022/05/highxtar-adidas-lanza-dos-nuevas-colecciones-underwear-3-682x1024.jpg'); background-size: cover;
+    height: 500px;
+    transition: 1s;
+}
+.icon2{
+    width: 200px;
+    transition: 0.5s;
+    opacity: 80%;
+}
+.icon2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    opacity: 100%;
+}

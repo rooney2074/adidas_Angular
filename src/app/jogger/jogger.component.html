@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<div class="container-fluid"> 
+    <div class="container" style="margin-top: 100px;">
+      <div class="row mx-auto py-md-2 w-75">
+        <div class="col-md-4 py-3 px-lg-4 px-1" *ngFor="let item of allproducts | filter: searchterm : 'name'">
+            
+          <div class="product">
+            <a (click)="view(item)"><img src="{{item.image}}" width="100%" height="100%" alt=""></a>
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QmZH6wDZQrEzhEon1D6V4jSmoiU8HJSgTd4HvoQAavnRJiibT-8Wo8QnIWr57IVbEg&usqp=CAU" alt="" width="80px">
+            <div class="p-3">
+              <h6 class="p-2">{{item.name}}</h6>
+              <h4 class="text-primary">RS: {{item.price}}</h4>
+              <button class="btn btn-primary w-50" (click)="view(item)">Shop Now</button>&nbsp;
+              <button class="btn btn-success" (click)="add(item)">Add To Cart</button><br><br>
+              <button class="btn w-100" style="background-color: yellow;" (click)="addwish(item)">Add to Wishlist</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid text-center" style="background-image: url('https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); background-size: cover; height: auto; border-radius: 20px;">
+            <div style="padding:100px;">
+                <h6 class="">Adidas, in full Adidas AG, German manufacturer of athletic shoes and apparel and sporting goods. In the early 21st century it was the largest sportswear manufacturer in Europe and the second largest (after Nike) in the world. Adidas products are traditionally marked with a three-stripe trademark, which remains an element in the company’s newer “trefoil” and “mountain” logos. Headquarters are in Herzogenaurach, Germany.</h6>
+                <a href="" class="btn"><img src="https://i.pinimg.com/originals/8f/35/cd/8f35cdd75f373577127801858759d4ba.png" width="80px" alt=""></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5" style="background-image: url('https://pbs.twimg.com/media/FIMfoW8WYAUyCw9?format=jpg&name=4096x4096'); background-size: cover; height: auto;">
+        <div class="row mx-auto md-2 w-100 p-5">
+            <div class="col-md-6 py-5 px-lg-4 px-1">
+            <h1 class="text-light mt-5">OUR <b>PROMISE</b></h1>
+            <h5 class="text-light mt-5">Inspire the dreamers like you to live to their fullest potential: to be the best one can be, ON AND OFF THE FIELD.</h5>
+            <h5 class="text-light mt-5">Bringing your "A" game shouldn't stop after you play the best game of your life. Bring that passion and hard work to every area of your life - always strive to be the best version of yourself, and good things will happen.</h5>
+            <button class="btn btn-dark mt-5">Learn More</button>
+            </div>
+            <div class="col-md-6 px-lg-4 px-1">
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Rwk5PdpTxSU" title="adidas | Ready for Sport" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+
+    <app-footer></app-footer>
